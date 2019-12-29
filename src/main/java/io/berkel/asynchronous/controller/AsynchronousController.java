@@ -1,4 +1,4 @@
-package io.berkel.async.controller;
+package io.berkel.asynchronous.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,9 +12,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 @RestController
-public class AsyncController {
+public class AsynchronousController {
 
-    private static final Logger logger = LoggerFactory.getLogger(AsyncController.class);
+    private static final Logger logger = LoggerFactory.getLogger(AsynchronousController.class);
 
     @PostMapping("/expensiveoperation")
     public ResponseEntity<Void> expensiveOperation() {
@@ -27,7 +27,7 @@ public class AsyncController {
                 logger.error("Exception occured.");
             }
         };
-        ExecutorService executorService = Executors.newFixedThreadPool(10);
+        ExecutorService executorService = Executors.newSingleThreadExecutor();
         executorService.execute(runnableTask);
         executorService.shutdown();
 

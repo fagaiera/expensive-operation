@@ -1,13 +1,13 @@
-package io.berkel.async;
+package io.berkel.asynchronous;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AsyncApplication {
+public class AsynchronousApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(AsyncApplication.class, args);
+        SpringApplication.run(AsynchronousApplication.class, args);
     }
 
 }
