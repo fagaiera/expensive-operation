@@ -5,17 +5,17 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.9.RELEASE</version>
+        <version>2.3.1.RELEASE</version>
         <relativePath/>
     </parent>
-    <groupId>io.berkel</groupId>
-    <artifactId>async</artifactId>
+    <groupId>com.fabiogaiera</groupId>
+    <artifactId>expensiveoperation</artifactId>
     <version>0.0.1</version>
-    <name>async</name>
-    <description>Asynchronous Request</description>
+    <name>Expensive operation</name>
+    <description>REST API call which simulates to execute an expensive operation, but it gives a response immediately.</description>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>11</java.version>
     </properties>
 
     <dependencies>
@@ -23,12 +23,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
         </dependency>
 
     </dependencies>

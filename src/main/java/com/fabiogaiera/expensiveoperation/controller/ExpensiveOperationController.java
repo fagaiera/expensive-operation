@@ -1,4 +1,4 @@
-package io.berkel.asynchronous.controller;
+package com.fabiogaiera.expensiveoperation.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,9 +12,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 @RestController
-public class AsynchronousController {
 
-    private static final Logger logger = LoggerFactory.getLogger(AsynchronousController.class);
+public class ExpensiveOperationController {
+    private static final Logger logger = LoggerFactory.getLogger(ExpensiveOperationController.class);
 
     @PostMapping("/expensiveoperation")
     public ResponseEntity<Void> expensiveOperation() {
