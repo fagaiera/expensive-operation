@@ -12,7 +12,6 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 @RestController
-
 public class ExpensiveOperationController {
     private static final Logger logger = LoggerFactory.getLogger(ExpensiveOperationController.class);
 
