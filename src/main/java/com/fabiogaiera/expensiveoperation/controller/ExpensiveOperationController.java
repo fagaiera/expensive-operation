@@ -23,7 +23,7 @@ public class ExpensiveOperationController {
                 TimeUnit.MILLISECONDS.sleep(600000);
                 logger.info("Expensive operation completed");
             } catch (InterruptedException e) {
-                logger.error("Exception occured.");
+                logger.error("Exception occurred.");
             }
         };
         ExecutorService executorService = Executors.newSingleThreadExecutor();
